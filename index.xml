@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Imperial Blog</title>
+    <link>http://example.org/</link>
+    <description>Recent content on Imperial Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Mar 2019 15:38:21 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About The Game</title>
+      <link>http://example.org/about-the-game/</link>
+      <pubDate>Tue, 19 Mar 2019 15:38:21 +0000</pubDate>
+      
+      <guid>http://example.org/about-the-game/</guid>
+      <description>Elevator Pitch Imperial Might (IM) is a browser and turn based, multiplayer, persistent world grand strategy game where you compete with other 15 players for power and prestige in a medieval world. Is a never ending game where you interact with fellow Kings using tools related to diplomacy, economy, military and culture.
+Your subjects use their free will to move and settle where economic and subsistence opportunities emerge, forming trade routes than then become roads and links to other Kingdoms.</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>http://example.org/about-me/</link>
+      <pubDate>Tue, 19 Mar 2019 15:38:04 +0000</pubDate>
+      
+      <guid>http://example.org/about-me/</guid>
+      <description>Hello there. I&amp;rsquo;m Gabriel, a 36 year old guy from Buenos Aires, Argentina. I&amp;rsquo;m a Business Intelligence Analyst, freelance web developer, IT Engineering undergrad and future husband.
+I have always dreamed of making a game and developing it as a business and now I&amp;rsquo;m giving it a real shot. I&amp;rsquo;d like to make it my living and if not, at least I&amp;rsquo;ll learn a lot of new things to beef up my resume.</description>
+    </item>
+    
+    <item>
+      <title>Blog introduction</title>
+      <link>http://example.org/well-first-post/</link>
+      <pubDate>Tue, 19 Mar 2019 15:33:38 +0000</pubDate>
+      
+      <guid>http://example.org/well-first-post/</guid>
+      <description>&lt;p&gt;Welcome to the Imperial Might Development Blog! You may very well have a broad picture of the game visiting the &lt;a href=&#34;http://localhost:1313/about-the-game/&#34;&gt;About The Game&lt;/a&gt;. If really interested in the game, check out &lt;a href=&#34;http://example.org/the-imperial-newsletter&#34;&gt;The Newsletter&lt;/a&gt; section so we keep in touch. In &lt;a href=&#34;http://localhost:1313/about-me/&#34;&gt;About Me&lt;/a&gt; you will know a little bit about who is behind all this thing.&lt;/p&gt;
+
+&lt;p&gt;This is a timid first post where I share a little bit of history about how I decided to start the game as a good first post to introduce the blog.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Imperial Newsletter</title>
+      <link>http://example.org/the-imperial-newsletter/</link>
+      <pubDate>Sun, 17 Mar 2019 20:21:57 +0000</pubDate>
+      
+      <guid>http://example.org/the-imperial-newsletter/</guid>
+      <description>Subscribe to the game news. You will not receive new blog post notifications (for that you may check @ImperialMightt) but instead meaninful game information and important related events. I&amp;rsquo;ll keep the spam to a minimum. If you subscribe to this I&amp;rsquo;ll know you are serious about the game!
+Please enter your email address
+powered by TinyLetter   </description>
+    </item>
+    
+  </channel>
+</rss>
