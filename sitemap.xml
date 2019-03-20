@@ -3,74 +3,74 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/about-the-game/</loc>
+    <loc>https://imperialmight.com/about-the-game/</loc>
     <lastmod>2019-03-19T15:38:21+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/about-me/</loc>
+    <loc>https://imperialmight.com/about-me/</loc>
     <lastmod>2019-03-19T15:38:04+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/blog-introduction-and-a-bit-of-history/</loc>
+    <loc>https://imperialmight.com/blog-introduction-and-a-bit-of-history/</loc>
     <lastmod>2019-03-19T15:33:38+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/the-imperial-newsletter/</loc>
+    <loc>https://imperialmight.com/the-imperial-newsletter/</loc>
     <lastmod>2019-03-17T20:21:57+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://imperialmight.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/fixed/</loc>
+    <loc>https://imperialmight.com/categories/fixed/</loc>
     <lastmod>2019-03-19T15:38:21+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/fixed/</loc>
+    <loc>https://imperialmight.com/fixed/</loc>
     <lastmod>2019-03-19T15:38:21+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/history/</loc>
+    <loc>https://imperialmight.com/tags/history/</loc>
     <lastmod>2019-03-19T15:33:38+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://imperialmight.com/</loc>
     <lastmod>2019-03-19T15:38:21+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/personal/</loc>
+    <loc>https://imperialmight.com/tags/personal/</loc>
     <lastmod>2019-03-19T15:38:04+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/post/</loc>
+    <loc>https://imperialmight.com/categories/post/</loc>
     <lastmod>2019-03-19T15:33:38+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/post/</loc>
+    <loc>https://imperialmight.com/post/</loc>
     <lastmod>2019-03-19T15:33:38+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://imperialmight.com/tags/</loc>
     <lastmod>2019-03-19T15:33:38+00:00</lastmod>
     <priority>0</priority>
   </url>
