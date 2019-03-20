@@ -288,3 +288,11 @@ blockquote>p::first-letter {
   background-color: gold;
   color: purple;
 }
+
+
+#subs_newsletter {
+  font-family: "Josefin Sans";
+  font-size: var(--baseFontSize);
+  text-align: center;
+  margin-bottom: var(--baseUnit);
+}
