@@ -29,7 +29,7 @@
 
   #menumobile>ul>li>a {
     color: gold;
-    font-size: calc(var(--baseFontSize)*1.2);
+    font-size: calc(var(--baseFontSize)*1.4);
     font-weight: bold;
   }
 
@@ -40,7 +40,7 @@
   article {
     margin: auto;
     width: 100%;
-    margin: 0 calc(var(--baseUnit)*2) 0 calc(var(--baseUnit)*2)
+    margin: var(--baseUnit);
   }
 }
 
