@@ -13,14 +13,9 @@
     --baseFontSize: 1.4rem;
   }
 
-  article {
-    margin: auto;
-    width: 100%;
-    padding: 0 calc(var(--baseUnit)*2) 0 calc(var(--baseUnit)*2)
-  }
-
   #site_title {
-    margin-top: 4.5rem;
+    width: 100%;
+    margin-top: 4.7rem;
   }
 
   #menumobile {
@@ -34,11 +29,18 @@
 
   #menumobile>ul>li>a {
     color: gold;
-    font-size: calc(var(--baseFontSize))
+    font-size: calc(var(--baseFontSize)*1.2);
+    font-weight: bold;
   }
 
   #menu {
     display: none
+  }
+
+  article {
+    margin: auto;
+    width: 100%;
+    margin: 0 calc(var(--baseUnit)*2) 0 calc(var(--baseUnit)*2)
   }
 }
 
