@@ -5,7 +5,7 @@
   min-width: 600px;
 } */
 
-@media screen and (max-device-width: 800px) {
+@media screen and (max-device-width: 700px) {
 
   /* mobile */
   :root {
@@ -42,7 +42,7 @@
   }
 }
 
-@media screen and (min-device-width: 801px) {
+@media screen and (min-device-width: 701px) {
   :root {
     --baseUnit: 1.618rem;
     --baseFontSize: 1.4rem;
