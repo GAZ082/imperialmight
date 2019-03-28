@@ -1,9 +1,65 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600|Josefin+Slab|Milonga');
 
 
-:root {
-  --baseUnit: 1.618rem;
-  --baseFontSize: 1.4rem;
+/* html {
+  min-width: 600px;
+} */
+
+@media screen and (max-device-width: 800px) {
+
+  /* mobile */
+  :root {
+    --baseUnit: 1.618rem;
+    --baseFontSize: 1.4rem;
+  }
+
+  article {
+    margin: auto;
+    width: 100%;
+    padding: 0 calc(var(--baseUnit)*2) 0 calc(var(--baseUnit)*2)
+  }
+
+  #site_title {
+    margin-top: 4.5rem;
+  }
+
+  #menumobile {
+    display: block;
+    position: fixed;
+    top: 0;
+    background-color: purple;
+    color: gold;
+    width: 100%;
+  }
+
+  #menumobile>ul>li>a {
+    color: gold;
+    font-size: calc(var(--baseFontSize))
+  }
+
+  #menu {
+    display: none
+  }
+}
+
+@media screen and (min-device-width: 801px) {
+  :root {
+    --baseUnit: 1.618rem;
+    --baseFontSize: 1.4rem;
+  }
+
+  #menu {
+    display: block
+  }
+
+  #menumobile {
+    display: none
+  }
+
+  article {
+    margin: auto;
+    width: 70ch;
+  }
 }
 
 h1,
@@ -58,11 +114,6 @@ strong {
   font-weight: 600;
 }
 
-article {
-  margin: auto;
-  width: 70ch;
-}
-
 article>ul {
   font-family: "Josefin Slab";
   font-size: var(--baseFontSize);
@@ -100,7 +151,7 @@ p,
 }
 
 article>p:first-letter {
-  font-size: 1.8rem;
+  font-size: var(--baseFontSize);
   font-family: 'Milonga';
   color: purple;
 }
@@ -165,7 +216,7 @@ nav>ul {
   justify-content: center;
 }
 
-nav>ul>li:not(:first-child)::after {
+li:not(:first-child):before {
   content: '|';
   margin: var(--baseUnit);
 }
