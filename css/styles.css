@@ -4,8 +4,8 @@
 /* *******************MOBILE EXCEPTIONS *******************/
 @media screen and (max-device-width: 800px) {
   :root {
-    --baseUnit: 1.618rem;
-    --baseFontSize: 2rem;
+    --baseUnit: calc(1.618rem*1.4);
+    --baseFontSize: calc(1.4rem*1.4);
     --fontText: 'Josefin Slab';
     --fontHeading: 'Josefin Sans';
   }
@@ -25,7 +25,10 @@
     background-color: purple;
     color: gold;
     width: 100%;
-    box-shadow: 0rem 0rem 0.4rem black;
+    /* box-shadow: 0rem calc(var(--baseUnit)) calc(var(--baseUnit)*4) black; */
+    box-shadow: 0rem 0rem calc(var(--baseUnit)/2) black;
+
+    /* box-shadow: 0 0 10px black; */
   }
 
   #menumobile>ul {
@@ -35,7 +38,7 @@
 
   #menumobile>ul>li>a {
     color: gold;
-    font-size: calc(var(--baseFontSize)*2);
+    font-size: calc(var(--baseFontSize)*1.4);
   }
 
   #menu {
@@ -46,10 +49,6 @@
     margin: auto;
     font-family: var(--fontText);
     margin-left: calc(var(--baseUnit)*2);
-  }
-
-  h2 {
-    margin: 0 0 var(--baseUnit) 0;
   }
 
 }
@@ -79,13 +78,7 @@
     width: 70ch;
   }
 
-  h2 {
-    margin: calc(var(--baseUnit)*2) 0 var(--baseUnit) calc(var(--baseUnit)*-1);
-  }
 
-  h2:first-of-type {
-    margin: calc(var(--baseUnit)) 0 var(--baseUnit) calc(var(--baseUnit)*-1);
-  }
 }
 
 /* ******************** END DESKTOP EXCEPTIONS ********************/
@@ -105,10 +98,16 @@ h1 {
   margin: calc(var(--baseUnit)*2) 0 calc(var(--baseUnit)*2);
 }
 
+
+h2:first-of-type {
+  margin: calc(var(--baseUnit)) 0 var(--baseUnit) calc(var(--baseUnit)*-1);
+}
+
 h2 {
   font-size: calc(var(--baseFontSize)*1.25);
   color: purple;
   padding-left: calc(var(--baseUnit)/2);
+  margin: calc(var(--baseUnit)*2) 0 var(--baseUnit) calc(var(--baseUnit)*-1);
 }
 
 
@@ -314,8 +313,8 @@ blockquote>p::first-letter {
 }
 
 #newsletter {
-  font-family: "Josefin Sans";
-  font-size: 1.4rem;
+  font-family: var(--fontHeading);
+  font-size: calc(var(--baseFontSize));
   color: purple;
   text-align: center;
   border: calc(var(--baseUnit)/2) solid rgba(0, 0, 0, 0.04);
@@ -323,11 +322,11 @@ blockquote>p::first-letter {
 }
 
 #newsletter>form>a {
-  font-size: 1rem;
+  font-size: calc(var(--baseFontSize)/2);
 }
 
 #tlemail {
-  font-family: "Josefin Slab";
+  font-family: var(--fontText);
   font-size: calc(var(--baseFontSize)*1.5);
   text-align: center;
   color: purple;
@@ -344,7 +343,7 @@ blockquote>p::first-letter {
 
 #letter_button {
   border: none;
-  font-family: "Josefin Sans";
+  font-family: var(--fontHeading);
   font-size: calc(var(--baseFontSize));
   background-color: purple;
   color: gold;
@@ -360,7 +359,7 @@ blockquote>p::first-letter {
 
 
 #subs_newsletter {
-  font-family: "Josefin Sans";
+  font-family: var(--fontHeading);
   font-size: var(--baseFontSize);
   text-align: center;
   margin-bottom: var(--baseUnit);
