@@ -1,16 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600|Josefin+Slab:400:600|Milonga');
 
-
 /* *******************MOBILE EXCEPTIONS *******************/
 @media screen and (max-device-width: 800px) {
 
-
-  #site_title {
-    width: 100%;
-  }
-
   #footer {
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
   }
 
   #menumobile {
@@ -20,10 +14,7 @@
     background-color: purple;
     color: gold;
     width: 100%;
-    /* box-shadow: 0rem calc(var(--baseUnit)) calc(var(--baseUnit)*4) black; */
     box-shadow: 0rem 0rem calc(var(--baseUnit)/2) black;
-
-    /* box-shadow: 0 0 10px black; */
   }
 
   #menumobile>ul {
@@ -42,8 +33,7 @@
 
   article {
     margin: auto;
-    font-family: var(--fontText);
-    margin-left: calc(var(--baseUnit)*2);
+    width: 70ch;
   }
 
 }
@@ -53,10 +43,8 @@
 /* ******************** DESKTOP EXCEPTIONS ********************/
 
 @media screen and (min-device-width: 801px) {
-
-
   #menu {
-    display: block
+    display: block;
   }
 
   #menumobile {
@@ -80,41 +68,48 @@
   --fontHeading: 'Josefin Sans';
 }
 
+body {
+  font-family: var(--fontText);
+  background-color: rgb(250, 250, 250);
+  min-width: 70ch;
+}
+
 h1,
 h2,
 h3,
 #site_title {
   font-family: var(--fontHeading);
+  color: purple;
 }
+
 
 h1 {
   font-size: calc(var(--baseFontSize)*2);
-  color: purple;
   text-align: center;
   text-transform: capitalize;
-  margin: calc(var(--baseUnit)*2) 0 calc(var(--baseUnit)*2);
-}
-
-
-h2:first-of-type {
-  margin: calc(var(--baseUnit)) 0 var(--baseUnit) calc(var(--baseUnit)*-1);
+  margin-top: calc(var(--baseUnit)*2);
+  margin-bottom: calc(var(--baseUnit)*2);
 }
 
 h2 {
   font-size: calc(var(--baseFontSize)*1.25);
-  color: purple;
-  padding-left: calc(var(--baseUnit)/2);
-  margin: calc(var(--baseUnit)*2) 0 var(--baseUnit) calc(var(--baseUnit)*-1);
+  margin-bottom: calc(var(--baseUnit));
+  margin-top: calc(var(--baseUnit)*2);
 }
 
+h2:first-of-type {
+  margin-bottom: calc(var(--baseUnit));
+  margin-top: calc(var(--baseUnit));
+}
 
 h3 {
   font-size: var(--baseFontSize);
-  color: purple;
-  margin: calc(var(--baseUnit)*2) 0 calc(var(--baseUnit)/2) 0;
+  margin-top: calc(var(--baseUnit)*2);
+  margin-bottom: calc(var(--baseUnit)/2);
 }
 
 #site_title {
+  box-sizing: border-box;
   font-size: calc(var(--baseFontSize)*2);
   color: gold;
   text-align: center;
@@ -132,8 +127,6 @@ strong {
 }
 
 article>ul {
-  font-family: var(--fontText);
-  font-size: var(--baseFontSize);
   margin: 0 0 var(--baseUnit) calc(var(--baseUnit)*2)
 }
 
@@ -144,18 +137,13 @@ article>ul>li:before {
 }
 
 article>ul>li {
-  margin-bottom: calc(var(--baseUnit)/2);
-  line-height: calc(var(--baseUnit)*1.618);
   text-indent: -2rem;
 }
-
-
 
 p,
 .author {
   font-size: var(--baseFontSize);
-  font-family: var(--fontText);
-  line-height: calc(var(--baseUnit)*1.618);
+  line-height: calc(var(--baseFontSize)*1.618);
   color: black;
   text-align: justify;
   margin-bottom: calc(var(--baseUnit));
@@ -173,12 +161,7 @@ article>p:first-letter {
   color: purple;
 }
 
-
-body {
-  background-color: rgb(250, 250, 250);
-}
-
-article>a {
+a {
   font-family: var(--fontHeading);
   color: purple;
   text-decoration: underline;
@@ -202,17 +185,6 @@ a:hover {
   margin: calc(var(--baseUnit)*1.618);
 }
 
-
-
-a {
-  font-family: var(--fontHeading);
-  color: purple;
-  text-decoration: underline;
-  text-decoration-color: gold;
-  border-radius: 0.2rem;
-  padding: 0.2rem;
-}
-
 nav {
   color: purple;
   padding: var(--baseUnit);
@@ -223,7 +195,6 @@ nav>ul {
   display: flex;
   text-decoration: none;
   font-size: var(--baseFontSize);
-  font-family: var(--fontText);
   list-style: none;
   justify-content: center;
 }
@@ -238,18 +209,6 @@ nav>ul {
   font-size: var(--baseFontSize);
   text-align: right;
 }
-
-.tags>a {
-  color: purple;
-  text-decoration: underline;
-  text-decoration-color: gold;
-}
-
-.tags>a:hover {
-  color: goldenrod;
-  background-color: gold;
-}
-
 
 img {
   border-radius: 0.2em;
@@ -271,11 +230,10 @@ img {
 }
 
 #footer {
-  font-size: calc(var(--baseUnit)/2);
+  font-size: calc(var(--baseFontSize)/2);
   font-family: var(--fontHeading);
   color: purple;
   text-align: center;
-  line-height: var(--baseUnit);
 }
 
 #footer>ul {
@@ -290,7 +248,6 @@ img {
   margin: auto;
 }
 
-
 blockquote>p {
   /* margin: var(--baseUnit) 0 var(--baseUnit) var(--baseUnit); */
   padding: calc(var(--baseUnit)/2);
@@ -299,13 +256,6 @@ blockquote>p {
   color: purple;
   background-color: rgba(0, 0, 0, 0.04);
   text-align: center;
-}
-
-blockquote>p::first-letter {
-  /* margin: var(--baseUnit) 0 var(--baseUnit) var(--baseUnit); */
-  color: purple;
-  font-size: 3rem;
-  font-family: 'Milonga';
 }
 
 #newsletter {
@@ -322,7 +272,6 @@ blockquote>p::first-letter {
 }
 
 #tlemail {
-  font-family: var(--fontText);
   font-size: calc(var(--baseFontSize)*1.5);
   text-align: center;
   color: purple;
@@ -353,10 +302,10 @@ blockquote>p::first-letter {
   color: purple;
 }
 
-
 #subs_newsletter {
   font-family: var(--fontHeading);
   font-size: var(--baseFontSize);
+  line-height: calc(var(--baseFontSize)*1.618);
   text-align: center;
   margin-bottom: var(--baseUnit);
 }
