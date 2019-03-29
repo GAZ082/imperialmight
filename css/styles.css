@@ -5,14 +5,9 @@
 @media screen and (max-device-width: 800px) {
   :root {
     --baseUnit: 1.618rem;
-    --baseFontSize: 1.4rem;
+    --baseFontSize: 2rem;
     --fontText: 'Josefin Slab';
     --fontHeading: 'Josefin Sans';
-  }
-
-  p,
-  .author {
-    font-size: calc(var(--baseFontSize)*1.4)
   }
 
   #site_title {
@@ -50,8 +45,7 @@
   article {
     margin: auto;
     font-family: var(--fontText);
-    padding: 0;
-    border: 1px solid red;
+    margin-left: calc(var(--baseUnit)*2);
   }
 
   h2 {
@@ -70,10 +64,6 @@
     --baseFontSize: 1.4rem;
     --fontText: 'Josefin Slab';
     --fontHeading: 'Josefin Sans';
-  }
-
-  p {
-    font-size: var(--baseFontSize)
   }
 
   #menu {
@@ -108,7 +98,7 @@ h3,
 }
 
 h1 {
-  font-size: calc(var(--baseUnit)*2);
+  font-size: calc(var(--baseFontSize)*2);
   color: purple;
   text-align: center;
   text-transform: capitalize;
@@ -116,20 +106,20 @@ h1 {
 }
 
 h2 {
-  font-size: calc(var(--baseUnit)*1.25);
+  font-size: calc(var(--baseFontSize)*1.25);
   color: purple;
   padding-left: calc(var(--baseUnit)/2);
 }
 
 
 h3 {
-  font-size: var(--baseUnit);
+  font-size: var(--baseFontSize);
   color: purple;
   margin: calc(var(--baseUnit)*2) 0 calc(var(--baseUnit)/2) 0;
 }
 
 #site_title {
-  font-size: calc(var(--baseUnit)*2);
+  font-size: calc(var(--baseFontSize)*2);
   color: gold;
   text-align: center;
   padding: var(--baseUnit);
@@ -167,6 +157,7 @@ article>ul>li {
 
 p,
 .author {
+  font-size: var(--baseFontSize);
   font-family: var(--fontText);
   line-height: calc(var(--baseUnit)*1.618);
   color: black;
@@ -177,6 +168,7 @@ p,
 .author {
   margin-top: calc(var(--baseUnit)*-1);
   margin-bottom: calc(var(--baseUnit)*2);
+  text-align: right;
 }
 
 article>p:first-letter {
@@ -214,11 +206,7 @@ a:hover {
   margin: calc(var(--baseUnit)*1.618);
 }
 
-.author {
-  font-size: 1.2rem;
-  text-align: right;
-  margin-bottom: 0;
-}
+
 
 a {
   font-family: var(--fontHeading);
