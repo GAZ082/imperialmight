@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600|Josefin+Slab:400:600|Milonga');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700');
 
+
+/* *******************MOBILE EXCEPTIONS *******************/
 @media screen and (max-device-width: 800px) {
-
-  /* mobile */
   :root {
     --baseUnit: 1.618rem;
     --baseFontSize: 1.4rem;
@@ -11,8 +10,9 @@
     --fontHeading: 'Josefin Sans';
   }
 
-  p {
-    font-weight: bolder;
+  p,
+  .author {
+    font-size: calc(var(--baseFontSize)*1.4)
   }
 
   #site_title {
@@ -30,10 +30,8 @@
     background-color: purple;
     color: gold;
     width: 100%;
-    box-shadow: 0rem 0.2rem 1rem black;
+    box-shadow: 0rem 0rem 0.4rem black;
   }
-
-
 
   #menumobile>ul {
     display: flex;
@@ -51,11 +49,20 @@
 
   article {
     margin: auto;
-    width: 70ch;
-    font-weight: 600;
-    font-family: var(--fontText)
+    font-family: var(--fontText);
+    padding: 0;
+    border: 1px solid red;
   }
+
+  h2 {
+    margin: 0 0 var(--baseUnit) 0;
+  }
+
 }
+
+/* *******************END MOBILE EXCEPTIONS *******************/
+
+/* ******************** DESKTOP EXCEPTIONS ********************/
 
 @media screen and (min-device-width: 801px) {
   :root {
@@ -65,7 +72,9 @@
     --fontHeading: 'Josefin Sans';
   }
 
-
+  p {
+    font-size: var(--baseFontSize)
+  }
 
   #menu {
     display: block
@@ -79,7 +88,17 @@
     margin: auto;
     width: 70ch;
   }
+
+  h2 {
+    margin: calc(var(--baseUnit)*2) 0 var(--baseUnit) calc(var(--baseUnit)*-1);
+  }
+
+  h2:first-of-type {
+    margin: calc(var(--baseUnit)) 0 var(--baseUnit) calc(var(--baseUnit)*-1);
+  }
 }
+
+/* ******************** END DESKTOP EXCEPTIONS ********************/
 
 h1,
 h2,
@@ -99,12 +118,7 @@ h1 {
 h2 {
   font-size: calc(var(--baseUnit)*1.25);
   color: purple;
-  margin: calc(var(--baseUnit)*2) 0 var(--baseUnit) calc(var(--baseUnit)*-1);
   padding-left: calc(var(--baseUnit)/2);
-}
-
-h2:first-of-type {
-  margin: calc(var(--baseUnit)) 0 var(--baseUnit) calc(var(--baseUnit)*-1);
 }
 
 
@@ -132,6 +146,7 @@ strong {
 }
 
 article>ul {
+  font-family: var(--fontText);
   font-size: var(--baseFontSize);
   margin: 0 0 var(--baseUnit) calc(var(--baseUnit)*2)
 }
@@ -153,7 +168,6 @@ article>ul>li {
 p,
 .author {
   font-family: var(--fontText);
-  font-size: var(--baseFontSize);
   line-height: calc(var(--baseUnit)*1.618);
   color: black;
   text-align: justify;
