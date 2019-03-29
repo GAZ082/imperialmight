@@ -3,12 +3,7 @@
 
 /* *******************MOBILE EXCEPTIONS *******************/
 @media screen and (max-device-width: 800px) {
-  :root {
-    --baseUnit: calc(1.618rem*1.4);
-    --baseFontSize: calc(1.4rem*1.4);
-    --fontText: 'Josefin Slab';
-    --fontHeading: 'Josefin Sans';
-  }
+
 
   #site_title {
     width: 100%;
@@ -38,7 +33,7 @@
 
   #menumobile>ul>li>a {
     color: gold;
-    font-size: calc(var(--baseFontSize)*1.4);
+    font-size: calc(var(--baseFontSize));
   }
 
   #menu {
@@ -58,12 +53,7 @@
 /* ******************** DESKTOP EXCEPTIONS ********************/
 
 @media screen and (min-device-width: 801px) {
-  :root {
-    --baseUnit: 1.618rem;
-    --baseFontSize: 1.4rem;
-    --fontText: 'Josefin Slab';
-    --fontHeading: 'Josefin Sans';
-  }
+
 
   #menu {
     display: block
@@ -82,6 +72,13 @@
 }
 
 /* ******************** END DESKTOP EXCEPTIONS ********************/
+
+:root {
+  --baseUnit: 1.618rem;
+  --baseFontSize: 1.4rem;
+  --fontText: 'Josefin Slab';
+  --fontHeading: 'Josefin Sans';
+}
 
 h1,
 h2,
@@ -220,7 +217,6 @@ nav {
   color: purple;
   padding: var(--baseUnit);
   margin: auto;
-  width: 70ch;
 }
 
 nav>ul {
@@ -238,7 +234,7 @@ nav>ul {
 }
 
 .tags {
-  font-family: "Josefin Sans";
+  font-family: var(--fontHeading);
   font-size: var(--baseFontSize);
   text-align: right;
 }
@@ -276,7 +272,7 @@ img {
 
 #footer {
   font-size: calc(var(--baseUnit)/2);
-  font-family: "Josefin Sans";
+  font-family: var(--fontHeading);
   color: purple;
   text-align: center;
   line-height: var(--baseUnit);
@@ -309,7 +305,7 @@ blockquote>p::first-letter {
   /* margin: var(--baseUnit) 0 var(--baseUnit) var(--baseUnit); */
   color: purple;
   font-size: 3rem;
-  font-family: Milonga;
+  font-family: 'Milonga';
 }
 
 #newsletter {
