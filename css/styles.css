@@ -125,7 +125,9 @@ strong {
 }
 
 article>ul {
-  margin: 0 0 var(--baseUnit) calc(var(--baseUnit)*2)
+  font-size: var(--baseFontSize);
+  line-height: calc(var(--baseFontSize)*1.618);
+  margin: 0 0 var(--baseUnit) calc(var(--baseUnit)*2);
 }
 
 article>ul>li:before {
