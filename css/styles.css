@@ -1,36 +1,48 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600|Josefin+Slab|Milonga');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600|Josefin+Slab:400:600|Milonga');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700');
 
-
-/* html {
-  min-width: 600px;
-} */
-
-@media screen and (max-device-width: 700px) {
+@media screen and (max-device-width: 800px) {
 
   /* mobile */
   :root {
     --baseUnit: 1.618rem;
     --baseFontSize: 1.4rem;
+    --fontText: 'Josefin Slab';
+    --fontHeading: 'Josefin Sans';
+  }
+
+  p {
+    font-weight: bolder;
   }
 
   #site_title {
     width: 100%;
-    margin-top: 4.7rem;
+  }
+
+  #footer {
+    margin-bottom: 8rem;
   }
 
   #menumobile {
     display: block;
     position: fixed;
-    top: 0;
+    bottom: 0;
     background-color: purple;
     color: gold;
     width: 100%;
+    box-shadow: 0rem 0.2rem 1rem black;
+  }
+
+
+
+  #menumobile>ul {
+    display: flex;
+    justify-content: space-evenly;
   }
 
   #menumobile>ul>li>a {
     color: gold;
-    font-size: calc(var(--baseFontSize)*1.4);
-    font-weight: bold;
+    font-size: calc(var(--baseFontSize)*2);
   }
 
   #menu {
@@ -39,16 +51,21 @@
 
   article {
     margin: auto;
-    width: 100%;
-    margin: var(--baseUnit);
+    width: 70ch;
+    font-weight: 600;
+    font-family: var(--fontText)
   }
 }
 
-@media screen and (min-device-width: 701px) {
+@media screen and (min-device-width: 801px) {
   :root {
     --baseUnit: 1.618rem;
     --baseFontSize: 1.4rem;
+    --fontText: 'Josefin Slab';
+    --fontHeading: 'Josefin Sans';
   }
+
+
 
   #menu {
     display: block
@@ -68,7 +85,7 @@ h1,
 h2,
 h3,
 #site_title {
-  font-family: "Josefin Sans";
+  font-family: var(--fontHeading);
 }
 
 h1 {
@@ -83,8 +100,6 @@ h2 {
   font-size: calc(var(--baseUnit)*1.25);
   color: purple;
   margin: calc(var(--baseUnit)*2) 0 var(--baseUnit) calc(var(--baseUnit)*-1);
-  /* border-left: calc(var(--baseUnit)/4) solid purple; */
-  /* line-height: calc(var(--baseUnit)*1.25*2); */
   padding-left: calc(var(--baseUnit)/2);
 }
 
@@ -117,7 +132,6 @@ strong {
 }
 
 article>ul {
-  font-family: "Josefin Slab";
   font-size: var(--baseFontSize);
   margin: 0 0 var(--baseUnit) calc(var(--baseUnit)*2)
 }
@@ -138,9 +152,8 @@ article>ul>li {
 
 p,
 .author {
+  font-family: var(--fontText);
   font-size: var(--baseFontSize);
-  font-family: "Josefin Slab";
-  font-weight: 400;
   line-height: calc(var(--baseUnit)*1.618);
   color: black;
   text-align: justify;
@@ -153,7 +166,7 @@ p,
 }
 
 article>p:first-letter {
-  font-size: var(--baseFontSize);
+  font-size: calc(var(--baseFontSize)*1.4);
   font-family: 'Milonga';
   color: purple;
 }
@@ -163,8 +176,8 @@ body {
   background-color: rgb(250, 250, 250);
 }
 
-p>a {
-  font-family: "Josefin Sans";
+article>a {
+  font-family: var(--fontHeading);
   color: purple;
   text-decoration: underline;
   text-decoration-color: gold;
@@ -194,7 +207,7 @@ a:hover {
 }
 
 a {
-  font-family: "Josefin Sans";
+  font-family: var(--fontHeading);
   color: purple;
   text-decoration: underline;
   text-decoration-color: gold;
@@ -213,12 +226,12 @@ nav>ul {
   display: flex;
   text-decoration: none;
   font-size: var(--baseFontSize);
-  font-family: "Josefin Sans";
+  font-family: var(--fontText);
   list-style: none;
   justify-content: center;
 }
 
-li:not(:first-child):before {
+#menu>ul>li:not(:first-child):before {
   content: '|';
   margin: var(--baseUnit);
 }
@@ -272,6 +285,7 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: var(--baseUnit);
+  font-size: var(--baseFontSize)
 }
 
 #disqus_thread {
