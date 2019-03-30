@@ -5,7 +5,7 @@
 
   :root {
     --baseUnit: 1.618rem;
-    --baseFontSize: 1.2rem;
+    --baseFontSize: 1rem;
     --fontText: 'Josefin Slab';
     --fontHeading: 'Josefin Sans';
   }
@@ -30,7 +30,7 @@
 
   #menumobile>ul>li>a {
     color: gold;
-    font-size: calc(var(--baseFontSize)*1.618);
+    font-size: var(--baseFontSize);
   }
 
   #menu {
