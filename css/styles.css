@@ -13,7 +13,7 @@
   }
 
   #footer {
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
   }
 
   #menumobile {
@@ -23,6 +23,7 @@
     background-color: rgb(250, 250, 250);
     width: 100%;
     box-shadow: 0rem 0rem calc(var(--baseUnit)/2) black;
+    padding: calc(var(--baseUnit)/2);
   }
 
   #menumobile>ul {
@@ -43,7 +44,7 @@
   article {
     margin: auto;
     max-width: 70ch;
-    padding: 0 var(--baseUnit) 0 var(--baseUnit);
+    padding: 0 calc(var(--baseUnit)/2) 0 calc(var(--baseUnit)/2);
   }
 }
 
@@ -254,6 +255,7 @@ img {
 #disqus_thread {
   max-width: 70ch;
   margin: auto;
+  padding: 0 calc(var(--baseUnit)/2) 0 calc(var(--baseUnit)/2);
 }
 
 blockquote>p {
