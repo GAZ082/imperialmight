@@ -3,13 +3,6 @@
 /* *******************MOBILE EXCEPTIONS *******************/
 @media screen and (max-device-width: 800px) {
 
-  :root {
-    --baseUnit: 1.618rem;
-    --baseFontSize: 1.2rem;
-    --fontText: 'Josefin Slab';
-    --fontHeading: 'Josefin Sans';
-  }
-
   #footer {
     margin-bottom: 6rem;
   }
@@ -30,7 +23,7 @@
 
   #menumobile>ul>li>a {
     color: gold;
-    font-size: calc(var(--baseFontSize)*1.618);
+    font-size: calc(var(--baseFontSize));
   }
 
   #menu {
@@ -50,13 +43,6 @@
 /* ******************** DESKTOP EXCEPTIONS ********************/
 
 @media screen and (min-device-width: 801px) {
-  :root {
-    --baseUnit: 1.618rem;
-    --baseFontSize: 1.4rem;
-    --fontText: 'Josefin Slab';
-    --fontHeading: 'Josefin Sans';
-  }
-
   #menu {
     display: block;
   }
@@ -72,6 +58,18 @@
 }
 
 /* ******************** END DESKTOP EXCEPTIONS ********************/
+
+:root {
+  --baseUnit: 1.618rem;
+  --baseFontSize: 1.4rem;
+  --fontText: 'Josefin Slab';
+  --fontHeading: 'Josefin Sans';
+}
+
+body {
+  font-family: var(--fontText);
+  background-color: rgb(250, 250, 250);
+}
 
 
 body {
