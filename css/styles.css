@@ -48,12 +48,10 @@
   }
 
   p>a,
-  .read_more {
+  .read_more,
+  article>ul>li>a {
     font-size: calc(var(--baseFontSize)*1.2)
   }
-
-
-
 }
 
 /* *******************END MOBILE EXCEPTIONS *******************/
