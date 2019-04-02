@@ -14,6 +14,7 @@
 
   #footer {
     margin-bottom: 4rem;
+    font-size: calc(var(--baseFontSize)*0.8);
   }
 
   #menumobile {
@@ -46,9 +47,12 @@
     padding: 0 calc(var(--baseUnit)/2) 0 calc(var(--baseUnit)/2);
   }
 
-  p>a {
+  p>a,
+  .read_more {
     font-size: calc(var(--baseFontSize)*1.2)
   }
+
+
 
 }
 
@@ -66,6 +70,7 @@
 
   #menu {
     display: block;
+    white-space: nowrap;
   }
 
   #menumobile {
@@ -76,6 +81,15 @@
     margin: auto;
     max-width: 70ch;
   }
+
+  .read_more {
+    font-size: var(--baseFontSize)
+  }
+
+  #footer {
+    font-size: calc(var(--baseFontSize)/2);
+  }
+
 }
 
 /* ******************** END DESKTOP EXCEPTIONS ********************/
@@ -242,11 +256,9 @@ img {
 
 .read_more {
   text-align: right;
-  font-size: var(--baseFontSize);
 }
 
 #footer {
-  font-size: calc(var(--baseFontSize)/2);
   font-family: var(--fontHeading);
   color: purple;
   text-align: center;
