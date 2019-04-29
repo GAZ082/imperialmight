@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600|Josefin+Slab:400:600|Milonga');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:regular,italic,600');
 
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+
 /* *******************MOBILE EXCEPTIONS *******************/
 @media screen and (max-device-width: 800px) {
 
