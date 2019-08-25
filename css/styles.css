@@ -144,6 +144,15 @@ h3 {
   background-color: purple;
 }
 
+#latest_commit{
+  background-color: gold;
+  color:purple;
+  text-align: center;
+  padding: calc(var(--baseUnit)/4);
+  font-family: var(--fontHeading);
+  vertical-align: middle;
+}
+
 em {
   font-style: italic;
   font-weight: 400;
@@ -202,9 +211,8 @@ a {
 }
 
 a:hover {
-  color: darkgoldenrod;
-  background-color: gold;
-  padding: 0.2rem;
+  color: plum;
+  text-decoration-color: purple;
 }
 
 .post_separator {
@@ -242,13 +250,12 @@ nav>ul {
 }
 
 img {
-  border-radius: calc(var(--baseUnit)/4);
-  /* border: calc(var(--baseUnit)/2) solid rgba(0, 0, 0, 0.04); */
+  border-radius: 0.2em;
+  border: calc(var(--baseUnit)/2) solid rgba(0, 0, 0, 0.04);
   max-width: 20ch;
   max-height: 20ch;
   margin: calc(var(--baseUnit)/2) 0 calc(var(--baseUnit)/2) calc(var(--baseUnit)/2);
-  float: right;
-   box-shadow: 0rem 0rem calc(var(--baseUnit)/2) black;
+  float: right
 }
 
 .left {
