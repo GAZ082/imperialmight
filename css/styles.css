@@ -13,6 +13,7 @@
     /* --fontText: 'Josefin Slab'; */
     --fontText: 'Montserrat';
     --fontHeading: 'Josefin Sans';
+    --cornersize: 20rem;
   }
 
   #footer {
@@ -67,6 +68,7 @@
     --baseFontSize: 1.4rem;
     --fontText: 'Josefin Slab';
     --fontHeading: 'Josefin Sans';
+    --cornersize: 20rem;
   }
 
   #menu {
@@ -136,6 +138,8 @@ h3 {
 }
 
 #site_title {
+  position:relative;
+  z-index: 0;
   box-sizing: border-box;
   font-size: calc(var(--baseFontSize)*2.5);
   color: gold;
@@ -345,4 +349,48 @@ blockquote>p {
   line-height: calc(var(--baseFontSize)*1.618);
   text-align: center;
   margin-bottom: var(--baseUnit);
+}
+
+#corner-in {
+  display: flex;
+  z-index: 1;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  width: calc(var(--baseUnit)*5);
+  padding: calc(var(--baseUnit)/4);
+  height: 10rem;
+  background: gold;
+  border: 0.2rem solid purple;
+  border-radius: 0 0 calc(var(--baseUnit)/5) calc(var(--baseUnit)/5);
+  border-top:0;
+  font-family: var(--fontHeading);
+  color:purple;
+}
+
+#corner-out a{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+#corner-out:hover{
+  text-decoration: none;
+  border-color: purple;
+}
+
+#corner-in:hover{
+  border-color: gold;
+  background: purple;
+  color:gold;
+}
+
+#corner-out{
+  position: absolute;
+  z-index: 1;
+  right:0;
+  margin-right: var(--baseUnit);
+  border: 0.2rem solid gold;
+  border-radius: 0 0 calc(var(--baseUnit)/4) calc(var(--baseUnit)/4);
+  border-top:0;
 }
