@@ -9,7 +9,7 @@
 
   :root {
     --baseUnit: 1.618rem;
-    --baseFontSize: 1rem;
+    --baseFontSize: 1.2rem;
     /* --fontText: 'Josefin Slab'; */
     --fontText: 'Montserrat';
     --fontHeading: 'Josefin Sans';
