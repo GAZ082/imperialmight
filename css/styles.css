@@ -9,11 +9,10 @@
 
   :root {
     --baseUnit: 1.618rem;
-    --baseFontSize: 1rem;
+    --baseFontSize: 1.2rem;
     /* --fontText: 'Josefin Slab'; */
     --fontText: 'Montserrat';
     --fontHeading: 'Josefin Sans';
-    --cornersize: 20rem;
   }
 
   #footer {
@@ -48,7 +47,7 @@
   article {
     margin: auto;
     max-width: 70ch;
-    padding: 0 calc(var(--baseUnit)/2) 0 calc(var(--baseUnit)/2);
+    padding: 0 calc(var(--baseUnit)) 0 calc(var(--baseUnit));
   }
 
   p>a,
@@ -65,10 +64,11 @@
 @media screen and (min-device-width: 801px) {
   :root {
     --baseUnit: 1.618rem;
-    --baseFontSize: 1.4rem;
-    --fontText: 'Josefin Slab';
+    --baseFontSize: 1.2rem;
+    /*  --fontText: 'Josefin Slab';*/
+    --fontText: 'Montserrat';
+
     --fontHeading: 'Josefin Sans';
-    --cornersize: 20rem;
   }
 
   #menu {
@@ -82,8 +82,9 @@
 
   article {
     margin: auto;
-    max-width: 70ch;
+    width: 57ch;
   }
+
 
   .read_more {
     font-size: var(--baseFontSize)
@@ -357,9 +358,9 @@ blockquote>p {
   align-items: flex-end;
   justify-content: center;
   text-align: center;
-  width: calc(var(--baseUnit)*5);
-  padding: calc(var(--baseUnit)/4);
-  height: 10rem;
+  width: calc(var(--baseUnit)*2);
+  padding: calc(var(--baseUnit)/2);
+  height: calc(var(--baseUnit)*8);
   background: gold;
   border: 0.2rem solid purple;
   border-radius: 0 0 calc(var(--baseUnit)/5) calc(var(--baseUnit)/5);
