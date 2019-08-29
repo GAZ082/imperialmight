@@ -394,4 +394,5 @@ blockquote>p {
   border: 0.2rem solid gold;
   border-radius: 0 0 calc(var(--baseUnit)/4) calc(var(--baseUnit)/4);
   border-top:0;
+  background: gold;
 }
