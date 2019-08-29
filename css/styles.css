@@ -352,7 +352,7 @@ blockquote>p {
   margin-bottom: var(--baseUnit);
 }
 
-#corner-in {
+#ribbon-in {
   display: flex;
   z-index: 1;
   align-items: flex-end;
@@ -369,24 +369,24 @@ blockquote>p {
   color:purple;
 }
 
-#corner-out a{
+#ribbon-out a{
   padding: 0;
   margin: 0;
   text-decoration: none;
 }
 
-#corner-out:hover{
+#ribbon-out:hover{
   text-decoration: none;
   border-color: purple;
 }
 
-#corner-in:hover{
+#ribbon-in:hover{
   border-color: gold;
   background: purple;
   color:gold;
 }
 
-#corner-out{
+#ribbon-out{
   position: absolute;
   z-index: 1;
   right:0;
