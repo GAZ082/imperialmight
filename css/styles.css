@@ -274,6 +274,10 @@ img {
   float: left;
   margin: calc(var(--baseUnit)/2) calc(var(--baseUnit)/2) calc(var(--baseUnit)/2) 0;
 }
+.center {
+  float: auto;
+  margin: calc(var(--baseUnit)/2);
+}
 
 .read_more {
   text-align: right;
