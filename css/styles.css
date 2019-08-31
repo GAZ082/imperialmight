@@ -91,7 +91,7 @@
   }
 
   #footer {
-    font-size: calc(var(--baseFontSize)/2);
+    font-size: calc(var(--baseFontSize)*0.6);
   }
 
 }
@@ -122,7 +122,7 @@ h1 {
 }
 
 h2 {
-  font-size: calc(var(--baseFontSize)*1.5);
+  font-size: calc(var(--baseFontSize)*1.4);
   margin-bottom: calc(var(--baseUnit));
   margin-top: calc(var(--baseUnit)*2);
 }
@@ -133,9 +133,14 @@ h2:first-of-type {
 }
 
 h3 {
-  font-size: var(--baseFontSize);
+  font-size: calc(var(--baseFontSize)*1.2);
   margin-top: calc(var(--baseUnit)*2);
   margin-bottom: calc(var(--baseUnit)/2);
+}
+
+#header{
+  position:relative;
+  width: 100%;
 }
 
 #site_title {
@@ -150,12 +155,14 @@ h3 {
 }
 
 #latest_commit{
+  font-size: 0.8rem;
   background-color: gold;
   color:purple;
   text-align: center;
-  padding: calc(var(--baseUnit)/4);
   font-family: var(--fontHeading);
   vertical-align: middle;
+  line-height: 1.2rem;
+  box-shadow: 0 calc(var(--baseUnit)/32) calc(var(--baseUnit)/8)  black;
 }
 
 em {
@@ -296,8 +303,10 @@ blockquote>p {
   font-style: italic;
   font-weight: 400;
   color: purple;
+  /* background-color: rgba(0, 0, 0, 0.04); */
   background-color: rgba(0, 0, 0, 0.04);
   text-align: center;
+  border-radius: 0.2em;
 }
 
 #newsletter {
@@ -395,4 +404,78 @@ blockquote>p {
   border-radius: 0 0 calc(var(--baseUnit)/4) calc(var(--baseUnit)/4);
   border-top:0;
   background: gold;
+  box-shadow: 0 calc(var(--baseUnit)/32) calc(var(--baseUnit)/8)  black;
+}
+
+#roadmap{
+  background: purple;
+  width:100%;
+}
+
+#roadmap ul {
+  display: flex;
+   align-items: center;
+   justify-content: center;
+  flex-wrap: wrap;
+}
+
+#roadmap li {
+  list-style: none;
+  font-family: "Josefin Sans";
+width: 4rem;
+  text-align: center;
+  border-right: 0.05rem solid rgba(0, 0, 0, 0.4);
+  background: rgba(255,255,255,0.2);
+}
+
+#roadmap ul > li > a{
+  text-decoration: none;
+  color: gold;
+}
+
+#roadmap ul > li > a:hover{
+  color: white;
+}
+
+
+#roadmap span,#roadmap li {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  text-align: middle;
+  padding: 0 0.2rem 0 0.1rem;
+}
+
+#roadmap span {
+  color: white;
+  font-family: "Josefin Sans";
+  border-radius: 0.2rem 0 0 0.2rem;
+  background: rgba(255,255,255,0.2);
+}
+
+#roadmap li#active {
+  color: white;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4) 80%, rgba(255,255,255,0.2) 0%);
+}
+
+
+ #roadmap li:last-child{
+  border-radius: 0 0.2rem 0.2rem 0;
+  border:0;
+}
+
+#roadmap li.done {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#roadmap #milestone >a {
+  color: palegoldenrod;
+  font-weight: bold;
+}
+
+.anchor {
+  text-decoration: none;
+}
+
+.anchor:hover {
+  color:purple;
 }
