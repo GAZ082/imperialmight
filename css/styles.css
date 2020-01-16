@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600|Josefin+Slab:400:600|Milonga');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:regular,italic,600');
-
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Josefin+Sans:400,400i,600|Milonga|Montserrat:400,400i,600&display=swap');
 
 
 /* *******************MOBILE EXCEPTIONS *******************/
@@ -46,7 +43,7 @@
 
   article {
     margin: auto;
-    max-width: 70ch;
+    max-width: 50rem;
     padding: 0 calc(var(--baseUnit)) 0 calc(var(--baseUnit));
   }
 
@@ -82,9 +79,8 @@
 
   article {
     margin: auto;
-    width: 57ch;
+    width: 40rem;
   }
-
 
   .read_more {
     font-size: var(--baseFontSize)
@@ -270,7 +266,7 @@ nav>ul {
 }
 
 img {
-  border-radius: 0.2em;
+  border-radius: 0.2rem;
   border: calc(var(--baseUnit)/2) solid rgba(0, 0, 0, 0.04);
   max-width: 20ch;
   max-height: 20ch;
@@ -310,11 +306,6 @@ img {
   font-size: var(--baseFontSize)
 }
 
-#disqus_thread {
-  max-width: 70ch;
-  margin: auto;
-  padding: 0 calc(var(--baseUnit)/2) 0 calc(var(--baseUnit)/2);
-}
 
 blockquote>p {
   padding: calc(var(--baseUnit)/2);
@@ -324,7 +315,7 @@ blockquote>p {
   /* background-color: rgba(0, 0, 0, 0.04); */
   background-color: rgba(0, 0, 0, 0.04);
   text-align: center;
-  border-radius: 0.2em;
+  border-radius: 0.2rem;
 }
 
 #newsletter {
@@ -496,4 +487,13 @@ width: 4rem;
 
 .anchor:hover {
   color:purple;
+}
+
+#commento{
+  max-width: 40rem;
+  margin:auto;
+}
+
+.commento-avatar-img{
+  border: 0.1rem solid purple;
 }
