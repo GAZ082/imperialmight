@@ -31,7 +31,7 @@
 }
 
 /* *******************MOBILE EXCEPTIONS *******************/
-@media screen and (max-device-width: 800px) {
+@media screen and (max-device-width: 720px) {
 
   :root {
     --baseUnit: 1.618rem;
@@ -70,7 +70,6 @@
   article {
     margin: auto;
     max-width: 60ch;
-    min-width: 40ch;
     padding: 0 calc(var(--baseUnit)) 0 calc(var(--baseUnit));
   }
 
@@ -83,7 +82,7 @@
 
 /* ******************** DESKTOP EXCEPTIONS ********************/
 
-@media screen and (min-device-width: 801px) {
+@media screen and (min-device-width: 721px) {
   :root {
     --baseUnit: 1.618rem;
     --baseFontSize: 1.1rem;
@@ -123,6 +122,7 @@ body {
   font-family: var(--fontText);
   background-color: var(--backColor);
   margin: auto;
+   min-width: 400px; 
 }
 
 body.dark{
@@ -165,7 +165,6 @@ h3 {
 }
 
 #header{
-  max-width: 70ch;
   margin:auto;
 }
 
