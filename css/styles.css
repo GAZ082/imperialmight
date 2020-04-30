@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,600;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400&display=swap');
 
 :root {
 --fontText: 'Raleway';
@@ -35,7 +35,7 @@
 
   :root {
     --baseUnit: 1.618rem;
-    --baseFontSize: 1.2rem;
+    --baseFontSize: 1.1rem;
   }
 
   #footer {
@@ -70,7 +70,7 @@
   article {
     margin: auto;
     max-width: 60ch;
-    padding: 0 calc(var(--baseUnit)) 0 calc(var(--baseUnit));
+    padding: 0 var(--baseUnit) 0 var(--baseUnit);
   }
 
   p>a,.read_more,article>ul>li>a {
@@ -85,7 +85,7 @@
 @media screen and (min-device-width: 721px) {
   :root {
     --baseUnit: 1.618rem;
-    --baseFontSize: 1.1rem;
+    --baseFontSize: 1rem;
     /*  --fontText: 'Josefin Slab';*/
   }
 
@@ -113,6 +113,10 @@
     font-size: calc(var(--baseFontSize)*0.8);
   }
 
+  body{
+    min-width: 600px;
+  }
+
 }
 
 /* ******************** END DESKTOP EXCEPTIONS ********************/
@@ -122,7 +126,6 @@ body {
   font-family: var(--fontText);
   background-color: var(--backColor);
   margin: auto;
-   min-width: 600px; 
    padding-top: var(--baseUnit);
 }
 
@@ -144,25 +147,25 @@ h1 {
   font-size: calc(var(--baseFontSize)*1.8);
   text-align: center;
   text-transform: capitalize;
-  margin-top: calc(var(--baseUnit)*2);
+  margin-top: var(--baseUnit);
   margin-bottom: var(--baseUnit);
 }
 
 h2 {
   font-size: calc(var(--baseFontSize)*1.4);
-  margin-bottom: calc(var(--baseUnit));
-  margin-top: calc(var(--baseUnit)*2);
+  margin-bottom: var(--baseUnit);
+  margin-top: var(--baseUnit);
 }
 
 h2:first-of-type {
-  margin-bottom: calc(var(--baseUnit));
-  margin-top: calc(var(--baseUnit));
+  margin-bottom: var(--baseUnit);
+  margin-top: var(--baseUnit);
 }
 
 h3 {
   font-size: calc(var(--baseFontSize)*1.2);
-  margin-top: calc(var(--baseUnit)*2);
-  margin-bottom: calc(var(--baseUnit)/2);
+  margin-top: var(--baseUnit);
+  margin-bottom: var(--baseUnit);
 }
 
 #header{
@@ -219,8 +222,8 @@ article>p {
   line-height: calc(var(--baseFontSize)*1.618);
   color: var(--frontColor);
   text-align: justify;
-  margin-bottom: calc(var(--baseUnit));
-  margin-top: calc(var(--baseUnit));
+  margin-bottom: var(--baseUnit);
+  margin-top: var(--baseUnit);
 }
 
 .author {
@@ -360,7 +363,7 @@ blockquote {
   padding: calc(var(--baseUnit)/2) 0 calc(var(--baseUnit)/2) 0;
   margin: var(--baseUnit) 0 var(--baseUnit) 0;
   /* border: calc(var(--baseUnit)/8) solid var(--linkColor); */
-   border-radius: 0.2rem; 
+   border-radius: 0.2rem;
   border:0;
   background-color: var(--boxColor);
 }
