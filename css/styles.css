@@ -151,22 +151,17 @@ h3,
 }
 
 h1 {
-    font-size: calc(var(--baseFontSize)*1.8);
+    font-size: calc(var(--baseFontSize)*2);
     text-align: center;
     text-transform: capitalize;
     margin-top: var(--baseUnit);
-    margin-bottom: var(--baseUnit);
+    margin-bottom: calc(var(--baseUnit)*3);
 }
 
 h2 {
     font-size: calc(var(--baseFontSize)*1.4);
+    margin-top: calc(var(--baseUnit)*2);
     margin-bottom: var(--baseUnit);
-    margin-top: var(--baseUnit);
-}
-
-h2:first-of-type {
-    margin-bottom: var(--baseUnit);
-    margin-top: var(--baseUnit);
 }
 
 h3 {
@@ -242,7 +237,8 @@ article>p {
     line-height: calc(var(--baseFontSize)*1.618);
     text-align: right;
     color: var(--hintColor);
-    margin-top: calc(var(--baseUnit)*-1);
+    margin-top: -5rem;
+    float: right;
 }
 
 article>p:first-letter {
@@ -465,4 +461,24 @@ code {
 
 #commit_date {
     color: var(--commit_dateColor);
+}
+
+.arrow_left {
+    width: 32px;
+    height: 34px;
+    content: url("../image/arrow_left.png");
+}
+
+.arrow_left:hover {
+    content: url("../image/arrow_left_hover.png");
+}
+
+.arrow_right {
+    width: 32px;
+    height: 34px;
+    content: url("../image/arrow.png");
+}
+
+.arrow_right:hover {
+    content: url("../image/arrow_hover.png");
 }
