@@ -306,11 +306,17 @@ article>img {
 .left {
     float: left;
     margin-left: 0;
+    margin-right: var(--baseUnit);
 }
 
 .right {
     float: right;
     margin-right: 0;
+    margin-left: var(--baseUnit);
+}
+
+article>img .left {
+    border: 10px solid red;
 }
 
 .center {
@@ -347,8 +353,8 @@ blockquote {
     background-color: var(--boxColor);
     text-align: center;
     border-radius: 0.2rem;
-    margin-top: var(--baseUnit);
-    margin-bottom: var(--baseUnit);
+    margin-top: calc(var(--baseUnit)*2);
+    margin-bottom: calc(var(--baseUnit)*2);
 }
 
 #newsletter {
